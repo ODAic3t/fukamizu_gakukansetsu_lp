@@ -334,7 +334,7 @@
     <!-- フッター -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 ふかみず歯科クリニック. All rights reserved.</p>
+            <p>&copy; <span id="current-year">2025</span> ふかみず歯科クリニック. All rights reserved.</p>
         </div>
     </footer>
 
@@ -349,5 +349,10 @@
             </a>
         </div>
     </div>
+
+    <script>
+        // 現在の年を自動取得してフッターに表示
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html> 
